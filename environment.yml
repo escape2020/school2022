@@ -1,0 +1,27 @@
+name: eschool2022
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - astropy
+  - ipython
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - numba
+  - numpy
+  - pandas
+  - pip
+  - pytables
+  - pytest
+  - pytest-cov
+  - python=3.10
+  - scikit-learn
+  - scipy
+  - twine
+  - wheel
+  - line_profiler
+  - memory_profiler
+  - snakeviz
+  - pip:
+    - build
