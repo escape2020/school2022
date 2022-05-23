@@ -21,7 +21,7 @@ further defined and clarified by the organisers.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise, unacceptable behaviour may be reported by contacting the organisers at escape_school@lapp.in2p3.fr.
+Instances of abusive, harassing, or otherwise, unacceptable behaviour may be reported by contacting the organisers at escapeschool2022@lapp.in2p3.fr.
 
 All complaints will be reviewed and investigated and will result in a deemed necessary and appropriate response to the circumstances. The organisers' team is obligated to maintain confidentiality concerning the reporter of an incident.
 Further details of specific enforcement policies may be posted separately.
