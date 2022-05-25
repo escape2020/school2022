@@ -45,7 +45,7 @@ Paginate = 8
   description = "ESCAPE"
   avatar = "https://projectescape.eu/sites/default/files/logo-Escape_0.png"
   headerTitle = "ESCAPE School"
-  motto = "2021"
+  motto = "2022"
   # maxTags = 5
 
   # footerBottomText = "Learn more at: "
@@ -65,7 +65,6 @@ Paginate = 8
   # mastodon = ""
   linkedin = "escape-eu"
    github = "https://escape2020.github.io/school2022/"
-#  gitlabin2p3 = "escape2020/schools/school2021"
   # stackoverflow = "ESCAPE"
   # codepen = "ESCAPE"
 
