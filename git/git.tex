@@ -1,0 +1,59 @@
+\input{header_maxnoe.tex}
+
+\tikzset{
+  invisible/.style={opacity=0,text opacity=0},
+  visible on/.style={alt={#1{}{invisible}}},
+  alt/.code args={<#1>#2#3}{%
+    \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+  },
+}
+
+
+\author[M. Nöthe]{Maximilian Nöthe}
+\title[VC with Git]{Version Control using \texttt{git}}
+\date[2021-06-08]{%
+  \raisebox{-1.5cm}{\includegraphics[height=3cm]{../logo-Escape_cropped.png}}
+  \Large Summer School – 2022-06-21
+}
+\institute[TU Dortmund]{Astroparticle Physics, TU Dortmund}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[c]{Overview}
+\tableofcontents
+\end{frame}
+
+\section{whoami}
+\begin{frame}[c, fragile]{\texttt{whoami}}
+  \begin{columns}[onlytextwidth, T]%
+    \begin{column}{0.8\textwidth}%
+      \begin{itemize}
+        \item[{\Large\faGithub}] \href{https://github.com/maxnoe}{maxnoe}
+        \item[{\Large\faUniversity}] PostDoc @ TU Dortmund
+        \item[{\Large\faGraduationCap}] PhD in astroparticle physics, also @ TU Dortmund
+        \item[{\Large\faFlask}] Gamma-ray astronomy with Imaging Atmospheric Cherenkov Telescopes (CTA, FACT, MAGIC)
+        \item[{\Large\faMicroscope}] Data Analysis, Statistics, Machine Learning, Software Development
+        \item[{\Large\faLaptopCode}] \faPython, C++, \LaTeX{}, (neo)vim, zsh, astropy, matplotlib, ...
+        \item[{\Large\faHeart}] FOSS, Open Science, Best Practices
+      \end{itemize}
+    \end{column}%
+    \hfill%
+    \begin{column}{0.19\textwidth}%
+      \includegraphics[height=\textwidth]{images/max.jpg}
+    \end{column}%
+  \end{columns}%
+\end{frame}
+
+\copywarning{}
+
+\input{content/vc.tex}
+\input{content/git.tex}
+\headlineframe{Questions?}
+
+\input{content/hosters.tex}
+\input{content/advanced.tex}
+\headlineframe{Questions?}
+
+\end{document}

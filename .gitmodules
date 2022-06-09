@@ -1,0 +1,3 @@
+[submodule ".tex/beamertheme-vertex"]
+	path = .tex/beamertheme-vertex
+	url = https://github.com/maxnoe/beamertheme-vertex
