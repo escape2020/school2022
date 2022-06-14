@@ -1,0 +1,20 @@
+# Compiled files
+__pycache__
+.pytest_cache
+.coverage
+
+# Packages/installer info
+*.egg
+*.eggs
+*.egg-info
+dist
+build
+_version.py
+
+# Mac OSX
+.DS_Store
+default.profraw
+
+# Pycharm editor project files
+.idea
+
