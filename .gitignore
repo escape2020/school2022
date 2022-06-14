@@ -10,11 +10,3 @@ __pycache__
 dist
 build
 _version.py
-
-# Mac OSX
-.DS_Store
-default.profraw
-
-# Pycharm editor project files
-.idea
-
