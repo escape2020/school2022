@@ -1,0 +1,9 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.5, pytest-7.1.2, pluggy-1.0.0
+rootdir: /home/maxnoe/escape-school2022/testing/examples, configfile: pyproject.toml
+plugins: cov-3.0.0, anyio-3.6.1
+collected 1 item
+
+test_fibonacci1.py .                                                     [100%]
+
+============================== 1 passed in 0.01s ===============================

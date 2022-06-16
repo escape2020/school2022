@@ -3,9 +3,9 @@ def greet(name):
 
 def test_prints(capsys):
     # call the function
-    greet('Escape School 2021')
+    greet('Escape School 2022')
 
     # test that it wrote what we expect to stdout
     captured = capsys.readouterr()
     # .err would be the stderr output
-    assert captured.out == 'Hello, Escape School 2021!\n'
+    assert captured.out == 'Hello, Escape School 2022!\n'
