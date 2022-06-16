@@ -46,7 +46,7 @@ jobs:
       run: |
         cd testing/fibonacci
         python -m pytest --cov=fibonacci --doctest-modules --doctest-glob='*.rst' -v
-        cd ../slides/examples
+        cd slides/examples
         python -m pytest -k 'not naive' -v
 
 
