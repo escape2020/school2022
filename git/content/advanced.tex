@@ -19,7 +19,7 @@
 
 \begin{frame}[c]{Disclaimers}
   \begin{itemize}
-    \item The main/master branch's history should only be modified under severe circumstances\\
+    \item The main/main branch's history should only be modified under severe circumstances\\
       \begin{itemize}
         \item Sensitive data in the history\footnote{Under most circumstances I wouldn't recomend to change the history. Change the passwords.}
         \item Large files in the history that need to be removed
@@ -28,7 +28,7 @@
     \item Feature branches can usually be modified
     \item Most large projects will even ask you to cleanup the history of your Pull Request to have a \enquote{nice} history
     \item Modifying already-pushed commits requires pushing with the \mintinline{bash}+--force+ option
-    \item The master/main branch should be protected against force pushes\\
+    \item The main/main branch should be protected against force pushes\\
       (Github/Gitlab settings)
   \end{itemize}
 \end{frame}
@@ -84,6 +84,23 @@
 \begin{frame}[t, fragile]{\mintinline{bash}+git pull --rebase+ vs.\ \mintinline{bash}+git pull --merge+}
   \begin{columns}[onlytextwidth, t]
     \begin{column}{0.22\textwidth}
+      Situation at start
+
+      \begin{tikzpicture}
+        \graph [
+          layered layout,
+          nodes={
+            blue!70!black,
+            node font=\ttfamily,
+          },
+        ]{
+          a <- b <- c <- d <- e <- main [vertexDarkRed];
+          b <- 1 <- 2 <- you [vertexDarkRed];
+        };
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.22\textwidth}
       With merging
 
       \begin{tikzpicture}
@@ -96,26 +113,9 @@
         ]{
           a <- b <- c <- d <- e <- f;
           b <- 1 <- 2 <- 3;
-          d <- 2;
+          d <- 3;
           3 <- f;
-          f <- master [vertexDarkRed];
-        };
-      \end{tikzpicture}
-    \end{column}
-    \hfill
-    \begin{column}{0.22\textwidth}
-      before rebase
-
-      \begin{tikzpicture}
-        \graph [
-          layered layout,
-          nodes={
-            blue!70!black,
-            node font=\ttfamily,
-          },
-        ]{
-          a <- b <- c <- d <- e <- f <- master [vertexDarkRed];
-          b <- 1 <- 2;
+          f <- main [vertexDarkRed];
         };
       \end{tikzpicture}
     \end{column}
@@ -131,8 +131,8 @@
             node font=\ttfamily,
           },
         ]{
-          a <- b <- c <- d <- e <-  master [vertexDarkRed];
-          e <- 1 <- 2;
+          a <- b <- c <- d <- e <-  main [vertexDarkRed];
+          e <- 1 <- 2 <- you [vertexDarkRed];
         };
       \end{tikzpicture}
     \end{column}
@@ -148,7 +148,7 @@
             node font=\ttfamily,
           },
         ]{
-          c <- d <- e <- f <- master [vertexDarkRed];
+          c <- d <- e <- f <- main [vertexDarkRed];
           e <- 1 <- 2;
           2 <- f;
         };

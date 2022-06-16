@@ -10,7 +10,7 @@ build/git.pdf: FORCE
 preview: FORCE
 	TEXINPUTS=$(TEXINPUTS) latexmk $(TEXOPTIONS) -pvc git.tex
 
-build/git.pdf: $(addprefix build/figures/, github.png bitbucket.png gitlab.png xkcd_git.png)
+build/git.pdf: $(addprefix build/figures/, github.png gitea.png gitlab.png xkcd_git.png)
 
 
 build/figures/github.png: | build/figures
@@ -18,15 +18,15 @@ build/figures/github.png: | build/figures
 	cd build/figures && unzip GitHub-Logos.zip
 	cp build/figures/GitHub-Logos/GitHub_Logo.png $@
 
-build/figures/bitbucket.png: | build/figures
-	wget https://www.atlassian.com/dam/jcr:e2a6f06f-b3d5-4002-aed3-73539c56a2eb/Bitbucket@2x-blue.png -O $@ --no-use-server-timestamps
-
 build/figures/gitlab.png: | build/figures
 	wget https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/wordmark/wm_no_bg.png -O $@ --no-use-server-timestamps
 
 
 build/figures/xkcd_git.png: | build/figures
 	wget https://imgs.xkcd.com/comics/git_2x.png -O $@ --no-use-server-timestamps
+
+build/figures/gitea.png: | build/figures
+	wget https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gitea_Logo.svg/240px-Gitea_Logo.svg.png -O $@ --no-use-server-timestamps
 
 
 build/figures:

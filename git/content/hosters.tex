@@ -21,7 +21,7 @@
   \begin{tabu}{@{} X[,C] @{} X[,C] @{} X[,C] @{}}
     \href{https://github.com}{\includegraphics[width=0.75\linewidth]{figures/github.png}} &
     \href{https://gitlab.com}{\includegraphics[width=0.75\linewidth]{figures/gitlab.png}} &
-    \href{https://bitbucket.org}{\includegraphics[width=0.75\linewidth]{figures/bitbucket.png}} \\
+    \href{https://gittea.io}{\includegraphics[width=0.25\linewidth]{figures/gitea.png}}\Huge Gitea \\
     \begin{itemize}
       \item Largest Hoster
       \item Many Open Source Projects, e.g. Python
@@ -38,21 +38,37 @@
     \end{itemize}
     &
     \begin{itemize}
-      \item Unlimited private repos with up to 5 contributors
-      \item Lacks far behind GitHub and GitLab
+      \item Lightweight solution for self-hosting
+      \item Repositories, Issues, Pull Requests, Wiki, etc.
     \end{itemize}
   \end{tabu}
 \end{frame}
 
-\begin{frame}[fragile]{SSH Keys}
+\begin{frame}[fragile]{Login for Remote Servers in the CLI}
   Git can communicate using two ways with a remote:
-  \begin{description}
-    \item[HTTPS] Works out of the box but requires entering credentials at every push/pull
-    \item[SSH] Using private/public keys. \\ Usually, you only need to decrypt a key once per session.
+
+  \begin{description}[HTTPS]
+    \item[HTTPS]
+      \begin{itemize}
+        \item Works for cloning of public repositories out of the box and for GitLab
+        \item As of 2021, Github requires a \emph{token}, not your password, for CLI login
+        \item Use git credential helper to have to enter credentials every time:\\
+          {\small\url{https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage}}
+      \end{itemize}
+    \item[SSH]
+      \begin{itemize}
+        \item Using private/public keys.
+        \item Keys can be protected with a password
+        \item Using an ssh-agent, you only need to decrypt a key once per session.
+        \item Many systems come with ssh-agent by default
+      \end{itemize}
   \end{description}
+\end{frame}
+
+\begin{frame}[fragile]{Using ssh}
 
   \begin{itemize}
-    \item To use ssh, you need to add at least one public key to your profile. 
+    \item To use ssh, you need to add at least one public key to your profile.
     \item It is considered best practice to use unique keys per machine and service
   \end{itemize}
 
@@ -63,6 +79,10 @@
       \end{code}
     \item Copy the content of the public key, on unix with \mintinline{bash}+cat ~/.ssh/id_rsa.github.pub+ or by using a text editor to open the file
     \item Add the public key to your profile
+    \item Use the ssh URL for cloning. To change the URL of an already cloned repository, do
+      \begin{code}{bash}
+        $ git remote set-url origin git@github.com:escape2020/school2022
+      \end{code}
   \end{enumerate}
 \end{frame}
 
@@ -70,7 +90,7 @@
   \begin{itemize}
     \item Pull Requests (GitHub) / Merge Requests (GitLab) are a feature on top of git provided by several platforms
     \item Used to propose changes by pushing a new branch and then requesting it to be merged into the main branch
-    \item Usually, projects using the GitHub Workflow only allow changes to the master branch via Pull Requests
+    \item Usually, projects using the GitHub Workflow only allow changes to the main branch via Pull Requests
     \item Pull Requests are used for Code Review, project maintainers and co-developers can look at your code and
       ask for changes
     \item Usually, a Continuous Integration (CI) system runs checks for the changes proposed in a Pull Request
