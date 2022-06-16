@@ -1,7 +1,10 @@
-FROM continuumio/miniconda3:4.12.0
+FROM jupyter/datascience-notebook:python-3.10.4 
 
-COPY . /home/school2022
-WORKDIR /home/school2022
+USER root
+
+COPY . /home/jovyan/school2022
+WORKDIR /home/jovyan/school2022
+
 
 RUN conda install mamba -n base -c conda-forge && \
     mamba env create -f environment.yml
@@ -11,5 +14,8 @@ ENV CONDA_DEFAULT_ENV eschool2022
 
 RUN echo "conda activate eschool2022" >> ~/.bashrc
 
-CMD bash
+WORKDIR $HOME
+USER $NB_USER
+
+#CMD bash
 
