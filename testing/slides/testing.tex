@@ -90,7 +90,7 @@
 
 \begin{frame}[c, fragile]{Example python code}
   We are going to use this simple function as example for our first unit tests:
-  \inputcode[title=\texttt{examples/step1/fibonacci.py}]{python}{./examples/step1/fibonacci.py}
+  \inputcode[title=\texttt{examples/step1/fibonacci.py}]{python}{../examples/step1/fibonacci.py}
 \end{frame}
 
 \section{pytest}
@@ -115,13 +115,13 @@
 \end{frame}
 
 \begin{frame}[c, fragile]{First Unit Test}
-  \inputcode[title=\texttt{examples/step1/test\_fibonacci1.py}]{python}{./examples/step1/test_fibonacci1.py}
+  \inputcode[title=\texttt{examples/step1/test\_fibonacci1.py}]{python}{../examples/step1/test_fibonacci1.py}
 
-  \inputcode{text}{./examples/pytest_output.txt}
+  \inputcode{text}{./../examples/pytest_output.txt}
 \end{frame}
 
 \begin{frame}[c]{A note on imports}
-  \inputcode[title=\texttt{examples/step1/test\_fibonacci1.py}]{python}{./examples/step1/test_fibonacci1.py}
+  \inputcode[title=\texttt{examples/step1/test\_fibonacci1.py}]{python}{../examples/step1/test_fibonacci1.py}
 
   \begin{itemize}
     \item Against usual python style, you should import what you test in the test function
@@ -132,27 +132,27 @@
 
 \begin{frame}[c]{Testing Exceptions}
   Make sure the correct exception is thrown, e.\,g.\ for invalid input:
-  \inputcode[title=\texttt{examples/step2/fibonacci.py}]<lastline=4>{python}{./examples/step2/fibonacci.py}
-  \inputcode[title=\texttt{examples/step2/test\_exception.py}]{python}{./examples/step2/test_exception.py}
+  \inputcode[title=\texttt{examples/step2/fibonacci.py}]<lastline=4>{python}{../examples/step2/fibonacci.py}
+  \inputcode[title=\texttt{examples/step2/test\_exception.py}]{python}{../examples/step2/test_exception.py}
 
   The same can be done for warnings using \mintinline{python}+pytest.warns+
 \end{frame}
 
 
 \begin{frame}[c, fragile]{Careful with floating point numbers}
-  \inputcode[title={Naive, this fails}]<firstline=3, lastline=4>{python}{./examples/floating/test_floating.py}
-  \inputcode[title={Correct approach, using \texttt{pytest.approx}}]<firstline=6>{python}{./examples/floating/test_floating.py}
+  \inputcode[title={Naive, this fails}]<firstline=3, lastline=4>{python}{../examples/floating/test_floating.py}
+  \inputcode[title={Correct approach, using \texttt{pytest.approx}}]<firstline=6>{python}{../examples/floating/test_floating.py}
 
   See \url{https://0.30000000000000004.com/}
 \end{frame}
 
 \begin{frame}[c, fragile]{Using numpy testing utitlities}
-  \inputcode[title={Using numpy}]{python}{./examples/floating/test_numpy.py}
+  \inputcode[title={Using numpy}]{python}{../examples/floating/test_numpy.py}
   See \url{https://numpy.org/doc/stable/reference/routines.testing.html}
 \end{frame}
 
 \begin{frame}[c, fragile]{Using astropy quantity support}
-  \inputcode[title={Using astropy units}]{python}{./examples/floating/test_astropy.py}
+  \inputcode[title={Using astropy units}]{python}{../examples/floating/test_astropy.py}
 \end{frame}
 
 \begin{frame}[c]{Fixtures}
@@ -162,7 +162,7 @@
     \item Fixtures have a scope $⇒$ same object used per session, module, class or function
     \item Default is \mintinline{python}+scope="function"+
   \end{itemize}
-  \inputcode{python}{./examples/fixtures/test_fixtures.py}
+  \inputcode{python}{../examples/fixtures/test_fixtures.py}
 \end{frame}
 
 \begin{frame}[c]{Fixtures provided by pytest}
@@ -177,11 +177,11 @@
 \end{frame}
 
 \begin{frame}[c]{capsys – Fixture for testing the standard streams}
-  \inputcode{python}{./examples/fixtures/test_capsys.py}
+  \inputcode{python}{../examples/fixtures/test_capsys.py}
 \end{frame}
 
 \begin{frame}[c]{caplog – Fixture for testing logging}
-  \inputcode{python}{./examples/fixtures/test_logging.py}
+  \inputcode{python}{../examples/fixtures/test_logging.py}
 \end{frame}
 
 \begin{frame}[c]{Temporary paths}
@@ -195,7 +195,7 @@
 \end{frame}
 
 \begin{frame}[c]{Temporary paths}
-  \inputcode{python}{./examples/fixtures/test_tmp_paths.py}
+  \inputcode{python}{../examples/fixtures/test_tmp_paths.py}
 
   Run the test and checkout \mintinline{bash}+/tmp/pytest-of-$USER/pytest-current/test_to_csvcurrent+
 \end{frame}
@@ -228,7 +228,7 @@
     \item Very useful to reduce code repetition and get clearer messages
   \end{itemize}
 
-  \inputcode[title={A parametrized test}]{python}{./examples/step3/test_parametrized.py}
+  \inputcode[title={A parametrized test}]{python}{./../examples/step3/test_parametrized.py}
 \end{frame}
 
 
@@ -236,9 +236,9 @@
   Some tests can only be run under specific conditions
     \begin{itemize}
       \item Tests for features requiring optional dependencies
-        \inputcode[title={This test is skipped when numpy is not available}]<firstline=5, lastline=7>{python}{./examples/test_skipped.py}{python}
+        \inputcode[title={This test is skipped when numpy is not available}]<firstline=5, lastline=7>{python}{../examples/test_skipped.py}{python}
       \item Tests for specific operating systems or versions
-        \inputcode[title={This test is only executed on Windows}]<firstline=9>{python}{./examples/test_skipped.py}
+        \inputcode[title={This test is only executed on Windows}]<firstline=9>{python}{../examples/test_skipped.py}
     \end{itemize}
 \end{frame}
 
@@ -250,7 +250,7 @@
     \item These tests shouldn't make your whole test suite fail
   \end{itemize}
 
-  \inputcode[title={This test is expected to fail}]{python}{./examples/test_xfail.py}
+  \inputcode[title={This test is expected to fail}]{python}{../examples/test_xfail.py}
 \end{frame}
 
 \begin{frame}[c, fragile]{Choosing which tests to run}
@@ -318,7 +318,7 @@
         markers = ["slow"]
       \end{code}
     \item Add the marker to a test
-      \inputcode<firstline=4, lastline=7>{python}{./examples/test_marks.py}
+      \inputcode<firstline=4, lastline=7>{python}{../examples/test_marks.py}
     \item Run tests using marker expressions
       \begin{code}{bash}
         $ pytest -m "not slow"
@@ -416,7 +416,7 @@
 \end{frame}
 
 \begin{frame}[c]{Mocking / Monkeypatching}
-  \inputcode{python}{./examples/test_monkeypatching.py}
+  \inputcode{python}{../examples/test_monkeypatching.py}
 \end{frame}
 
 \section{Test Driven Development}
@@ -459,7 +459,7 @@
 \begin{frame}[c, fragile]{Doctests}
   \begin{itemize}
     \item Examples are an important part of every documentations
-      \inputcode<firstline=1, lastline=8>{python}{../fibonacci/fibonacci/__init__.py}
+      \inputcode<firstline=1, lastline=8>{python}{../fibonacci/src/fibonacci/__init__.py}
     \item Important to verify that the examples stay up to date and are correct
     \item Solution: run all the examples and check the expected output
       \begin{code}{bash}
