@@ -1,0 +1,169 @@
+\PassOptionsToPackage{
+  unicode,
+  pdfusetitle,
+  colorlinks,
+  linkcolor=vertexDarkRed,
+  urlcolor=vertexDarkRed,
+  citecolor=vertexDarkRed,
+}{hyperref}
+\documentclass[
+  aspectratio=1610,
+]{beamer}
+\usetheme{vertex}
+\usepackage[american]{babel}
+
+\usepackage[autostyle]{csquotes}
+
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+
+\usepackage{tabu}
+
+\usepackage[outputdir=build]{minted}
+\usepackage{xcolor}
+\usepackage{xparse}
+\usepackage{tcolorbox}
+\tcbuselibrary{minted}
+\tcbuselibrary{skins}
+\tcbuselibrary{xparse}
+\usepackage{accsupp}
+
+\usepackage{tikz}
+\usetikzlibrary{
+  graphs, arrows, positioning, graphdrawing
+}
+\usegdlibrary{trees,layered}
+
+\usepackage{bookmark}
+\usepackage[shortcuts]{extdash}
+
+
+\definecolor{positive}{HTML}{15B01A}
+\colorlet{negative}{vertexDarkRed}
+\setmonofont{Fira Mono}
+
+\newcommand\headline[1]{\textbf{\Large\strut{}#1}\newline}
+\newcommand\headlineframe[1]{%
+  \begin{frame}[c]%
+    \begin{center}%
+      \Huge\color{vertexDarkRed}#1%
+    \end{center}%
+  \end{frame}%
+}%
+
+% Codeboxes and input listings
+\usemintedstyle{solarized-light}
+\renewcommand\theFancyVerbLine{%
+  \footnotesize%
+  \textcolor{darkgray}{\arabic{FancyVerbLine}}%
+}
+
+\tcbset{basebox/.style={
+  listing engine=minted,
+  colback=black!5!white,
+  colframe=black!60!white,
+  top=0pt,
+  bottom=0pt,
+  left=0pt,
+  right=0pt,
+  enhanced,
+}}
+
+\tcbset{codeboxnumbered/.style={
+  basebox,
+  listing only,
+  left=1em,
+  overlay={%
+    \begin{tcbclipinterior}
+      \fill[black!20!white] (frame.south west) rectangle ([xshift=1.3em]frame.north west);
+    \end{tcbclipinterior}
+  },
+}}
+
+
+% Usage: \begin{code}[<tcolorbox options>]<minted options> {<language>} \end{code}
+\DeclareTCBListing{codenumbered} {O{} D<>{} m} {
+  codeboxnumbered,
+  minted language=#3,
+  minted options={
+    fontsize=\footnotesize,
+    breaklines,
+    autogobble,
+    linenos,
+    numbersep=0.3em,
+    stripnl=true,
+    #2,
+  },
+  #1
+}
+
+\tcbset{codebox/.style={
+  basebox,
+  listing only,
+}}
+
+
+% Usage: \inputcode[<tcolorbox options>]<minted options> {<language>} {path}
+\DeclareTCBInputListing{inputcode} {O{} D<>{} m m} {
+  codeboxnumbered,
+  listing file=#4,
+  minted language=#3,
+  minted options={
+    fontsize=\footnotesize,
+    breaklines,
+    autogobble,
+    stripnl=true,
+    linenos,
+    numbersep=0.3em,
+    #2,
+  },
+  #1
+}
+
+
+% Usage: \begin{code}[<tcolorbox options>]<minted options> {<language>}\end{code}
+\DeclareTCBListing{code} {O{} D<>{} m} {
+  codebox,
+  minted language=#3,
+  minted options={
+    fontsize=\footnotesize,
+    breaklines,
+    autogobble,
+    stripnl=true,
+    #2,
+  },
+  #1
+}
+
+\newcommand\copywarning{%
+  \begin{frame}[c]{Warning}%
+    \centering%
+    \Large\color{vertexDarkRed}%
+    \vspace{3\baselineskip}
+
+    \begin{columns}[onlytextwidth, c]%
+      \begin{column}{0.15\textwidth}%
+        \fontsize{60}{60}\selectfont%
+        \faIcon{biohazard}%
+      \end{column}%
+      \hfill%
+      \begin{column}{0.7\textwidth}%
+        \centering
+        Copying commands or code from PDF files is\\ \textbf{dangerous}
+      \end{column}%
+      \hfill%
+      \begin{column}{0.15\textwidth}%
+        \hfill%
+        \fontsize{60}{60}\selectfont%
+        \hfill\faIcon{radiation}%
+      \end{column}%
+    \end{columns}%
+
+    \vspace{2\baselineskip}
+    Copy from the example files in the repository or type by hand.
+
+    \bigskip
+    Typing by hand is best for learning.
+  \end{frame}
+}
