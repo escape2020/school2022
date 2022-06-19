@@ -73,3 +73,9 @@ jobs:
         run: |
           conda env create --file environment.yml --name eschool2022
           echo "conda activate eschool2022" >> $HOME/.bash_profile
+          - name: Test notebooks
+      - name: Test notebooks
+        shell: bash -leo pipefail {0}
+        run: |
+          python -m ipykernel install --user --name eschool2022
+          pytest --nbmake --nbmake-kernel=eschool2022 **/*ipynb
