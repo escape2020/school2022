@@ -38,18 +38,6 @@ Please, if you don't need to, do not change the one that is now.
 https://projectescape.eu/
 
 
-## The school organisation
-
-### Communication
-
-#### Slack
-You shall have received an invitation link to slack by email (the one you used to register to the school).
-Slack will be used throughout the school as the main communication channel between participants, tutors and organizers.
-
-
-### Lectures
-
-
 ## Summary of links and tools
 
 **School main page**: https://indico.in2p3.fr/event/26913/
@@ -63,17 +51,20 @@ Slack will be used throughout the school as the main communication channel betwe
 
 ## Slides:
 
+
+### as PDF
+<CENTER>
+
+<object data="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101844/20220620_ESCAPE_SCHOOL_intro.pdf" type="application/pdf" width="100%" height="550px">
+    <embed src="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101844/20220620_ESCAPE_SCHOOL_intro.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101844/20220620_ESCAPE_SCHOOL_intro.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+</CENTER>
+
 ### Welcome address
 
-
-
-### School organisation
-
-https://indico.in2p3.fr/event/26913/
-
-
-
-## Recorded lecture
 
 
 ---
