@@ -23,5 +23,6 @@ dependencies:
   - line_profiler
   - memory_profiler
   - snakeviz
+  - nbmake
   - pip:
     - build
