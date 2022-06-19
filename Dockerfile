@@ -1,4 +1,4 @@
-FROM jupyter/datascience-notebook:python-3.10.4
+FROM condaforge/mambaforge
 
 USER root
 
@@ -17,4 +17,3 @@ RUN conda clean --all
 WORKDIR $HOME
 USER $NB_USER
 
-RUN rm -rf work
