@@ -1,7 +1,7 @@
 ---
 title: Demo Class
-date: 2040-06-17
-lastmod: 2040-06-17
+date: 2019-06-17
+lastmod: 2019-06-17
 author: Mikaël Jacquemont
 cover: /school2021/img/DL_Logo_escape_2022.png
 images:
