@@ -35,16 +35,3 @@ In this hands-on session we will will go through the installation of the ESCAPE 
 ---
 
 
-## Recorded Class
-
-### as a YouTube video
-
-<CENTER>
-
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/ptbiB_0bUf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</CENTER>
-
-
-
----
