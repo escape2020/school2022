@@ -15,7 +15,7 @@ tags:
 
 ## Summary
 
-We will go through the installation of the ESCAPE data science 2022 school environment starting from scratch. We will install conda - an open source package management system - and all the dependencies needed to follow the lectures of the summer school.
+In this hands-on session we will will go through the installation of the ESCAPE data science 2022 school environment from scratch. We will see how to install conda - an open source package management system - and all the dependencies needed to follow and run the lectures of the school.
 
 
 ## Slides
