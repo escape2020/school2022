@@ -1,6 +1,5 @@
 # flake8: noqa
 from astropy.nddata.utils import Cutout2D
-from astropy.wcs import WCS
 
 image_hdu = fits.open('data/casa_0.5-1.5keV.fits.gz')['PRIMARY']
 wcs = WCS(image_hdu.header)

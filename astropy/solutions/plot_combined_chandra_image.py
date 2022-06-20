@@ -1,6 +1,4 @@
 # flake8: noqa
-from astropy.io import fits
-from astropy.wcs import WCS
 
 # We define a figure size, that has an aspect ratio to accomodate three plots side by side
 fig = plt.figure(figsize=(12, 3))

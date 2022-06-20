@@ -1,6 +1,5 @@
 # flake8: noqa
 # Get example table
-from astropy.table import Table
 
 table = Table()
 table['Source_Name'] = ['Crab', 'Sag A*', 'Cas A']

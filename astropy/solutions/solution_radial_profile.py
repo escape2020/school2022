@@ -1,8 +1,4 @@
 # flake8: noqa
-from astropy.wcs import WCS
-from astropy.io import fits
-from astropy.coordinates import SkyCoord
-from astropy.visualization import quantity_support
 
 # open image
 image_hdu = fits.open('data/casa_1.5-3.0keV.fits.gz')['PRIMARY']

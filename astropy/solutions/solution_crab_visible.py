@@ -1,8 +1,4 @@
 # flake8: noqa
-from astropy.coordinates import EarthLocation, AltAz
-from astropy.time import Time
-import numpy as np
-from astropy.visualization import quantity_support
 
 # Define coordinate
 coord_crab = SkyCoord(83.63 * u.deg,  22.01 * u.deg, frame='icrs')

@@ -1,5 +1,4 @@
 # flake8: noqa
-import astropy.units as u
 
 # define new unit baro-meter
 bm = u.def_unit('baro-meter', 25 * u.cm)
