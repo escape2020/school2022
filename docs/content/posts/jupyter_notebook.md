@@ -4,9 +4,9 @@ date: 2022-06-20
 lastmod: 2022-06-20
 author: Enrique Garcia
 authorlink: https://github.com/garciagenrique
-cover: /school2022/docs/static/img/env_python.png
+cover: /school2022/img/Jupyter-logo.png
 images:
-  - /school2021/docs/static/img/env_python.png
+  - /school2022/img/Jupyter-logo.png
 categories:
   - Python
   - iPythoon
@@ -14,6 +14,7 @@ categories:
   - Notebook
 tags:
   - README
+  - day 2
 ---
 
 ## Summary
