@@ -1,8 +1,9 @@
 ---
 title: Coding environment
 date: 2022-06-20
-lastmod: 2040-06-20
+lastmod: 2022-06-20
 author: Enrique Garcia
+authorlink: https://github.com/garciagenrique
 cover: /school2022/docs/static/img/env_python.png
 images:
   - /school2021/docs/static/img/env_python.png
