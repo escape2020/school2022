@@ -69,8 +69,5 @@ https://projectescape.eu/
 
 </CENTER>
 
-### Welcome address
-
-
 
 ---
