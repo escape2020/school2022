@@ -5,8 +5,6 @@ USER root
 COPY . /home/jovyan/school2022
 WORKDIR /home/jovyan/school2022
 
-
-RUN conda install mamba -n base -c conda-forge
 RUN  mamba env create -f environment.yml
 
 ENV PATH /opt/conda/envs/$conda_env/bin:$PATH
@@ -19,5 +17,4 @@ RUN conda clean --all
 WORKDIR $HOME
 USER $NB_USER
 
-RUN rm -rf work/
-
+RUN rm -rf work

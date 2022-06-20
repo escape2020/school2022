@@ -38,18 +38,6 @@ Please, if you don't need to, do not change the one that is now.
 https://projectescape.eu/
 
 
-## The school organisation
-
-### Communication
-
-#### Slack
-You shall have received an invitation link to slack by email (the one you used to register to the school).
-Slack will be used throughout the school as the main communication channel between participants, tutors and organizers.
-
-
-### Lectures
-
-
 ## Summary of links and tools
 
 **School main page**: https://indico.in2p3.fr/event/26913/
@@ -63,17 +51,22 @@ Slack will be used throughout the school as the main communication channel betwe
 
 ## Slides:
 
-### Welcome address
+### Welcome address by Giovanni Lamanna, LAPP director and head of ESCAPE
 
 
+[Download the slides](https://indico.in2p3.fr/event/26913/contributions/108196/attachments/71539/101858/ESCAPEschool_GLamanna_Welcome2022.pptx)
 
-### School organisation
+### School organisation, Thomas Vuillaume, EDASS Chair
+<CENTER>
+  
 
-https://indico.in2p3.fr/event/26913/
+<object data="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101857/20220620_ESCAPE_SCHOOL_intro.pdf" type="application/pdf" width="100%" height="550px">
+    <embed src="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101857/20220620_ESCAPE_SCHOOL_intro.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101857/20220620_ESCAPE_SCHOOL_intro.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
 
-
-
-## Recorded lecture
+</CENTER>
 
 
 ---
