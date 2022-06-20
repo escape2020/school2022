@@ -53,7 +53,6 @@ https://projectescape.eu/
 
 ### Welcome address by Giovanni Lamanna, LAPP director and head of ESCAPE
 
-<iframe src="https://indico.in2p3.fr/event/26913/contributions/108196/attachments/71539/101858/ESCAPEschool_GLamanna_Welcome2022.pptx/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="505" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 [Download the slides](https://indico.in2p3.fr/event/26913/contributions/108196/attachments/71539/101858/ESCAPEschool_GLamanna_Welcome2022.pptx)
 
