@@ -32,6 +32,6 @@ Making research results more accessible and reproducible can contribute to bette
 
 ## Slides
 
-You can view and download the presentation slides here: https://doi.org/10.6084/m9.figshare.14710110
+You can view and download the presentation slides here: https://doi.org/10.6084/m9.figshare.20079179
 
 ---
