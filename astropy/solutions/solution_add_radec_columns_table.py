@@ -1,3 +1,4 @@
+# flake8: noqa
 # Get example table
 from astropy.table import Table
 

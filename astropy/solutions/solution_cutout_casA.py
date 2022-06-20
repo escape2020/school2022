@@ -1,3 +1,4 @@
+# flake8: noqa
 from astropy.nddata.utils import Cutout2D
 from astropy.wcs import WCS
 

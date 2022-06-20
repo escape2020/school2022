@@ -1,3 +1,4 @@
+# flake8: noqa
 from astropy.coordinates import SkyCoord
 
 # Coordinate of PKS2155-305

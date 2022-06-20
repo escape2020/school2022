@@ -1,3 +1,4 @@
+# flake8: noqa
 from scipy.optimize import minimize
 
 # Copy over the definition from the tutorial notebook 

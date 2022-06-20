@@ -1,8 +1,9 @@
+# flake8: noqa
+from astropy.coordinates import Angle
+
 source_classes = set(fermi_2fhl['CLASS'])
 
 print('Source classes: {}'.format(source_classes))
-
-from astropy.coordinates import Angle
 
 plt.figure(figsize=(12, 5))
 ax = plt.subplot(projection='aitoff')

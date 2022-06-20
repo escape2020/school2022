@@ -1,3 +1,4 @@
+# flake8: noqa
 from astropy.coordinates import EarthLocation, AltAz
 from astropy.time import Time
 import numpy as np

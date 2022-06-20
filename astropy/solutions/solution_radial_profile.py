@@ -1,3 +1,4 @@
+# flake8: noqa
 from astropy.wcs import WCS
 from astropy.io import fits
 from astropy.coordinates import SkyCoord

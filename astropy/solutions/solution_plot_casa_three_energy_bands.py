@@ -1,3 +1,4 @@
+# flake8: noqa
 from astropy.io import fits
 
 filenames = ['data/casa_0.5-1.5keV.fits.gz', 'data/casa_1.5-3.0keV.fits.gz',

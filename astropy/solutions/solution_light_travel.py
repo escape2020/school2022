@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from astropy import constants as const
 import astropy.units as u
 

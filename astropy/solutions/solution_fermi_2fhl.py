@@ -1,3 +1,4 @@
+# flake8: noqa
 # Read table
 fermi_2fhl = Table.read('data/fermi_2fhl_catalog.fits', hdu=1)
 

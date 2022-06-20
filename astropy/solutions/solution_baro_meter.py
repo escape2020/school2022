@@ -1,3 +1,4 @@
+# flake8: noqa
 import astropy.units as u
 
 # define new unit baro-meter
