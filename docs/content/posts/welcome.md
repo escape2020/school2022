@@ -51,13 +51,19 @@ https://projectescape.eu/
 
 ## Slides:
 
+### Welcome address by Giovanni Lamanna, LAPP director and head of ESCAPE
 
-### as PDF
+<iframe src="https://indico.in2p3.fr/event/26913/contributions/108196/attachments/71539/101858/ESCAPEschool_GLamanna_Welcome2022.pptx/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="505" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+[Download the slides](https://indico.in2p3.fr/event/26913/contributions/108196/attachments/71539/101858/ESCAPEschool_GLamanna_Welcome2022.pptx)
+
+### School organisation, Thomas Vuillaume, EDASS Chair
 <CENTER>
+  
 
-<object data="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101844/20220620_ESCAPE_SCHOOL_intro.pdf" type="application/pdf" width="100%" height="550px">
-    <embed src="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101844/20220620_ESCAPE_SCHOOL_intro.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101844/20220620_ESCAPE_SCHOOL_intro.pdf">Download PDF</a>.</p>
+<object data="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101857/20220620_ESCAPE_SCHOOL_intro.pdf" type="application/pdf" width="100%" height="550px">
+    <embed src="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101857/20220620_ESCAPE_SCHOOL_intro.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://indico.in2p3.fr/event/26913/contributions/108195/attachments/71528/101857/20220620_ESCAPE_SCHOOL_intro.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
