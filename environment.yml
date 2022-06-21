@@ -28,5 +28,6 @@ dependencies:
   - nbmake
   - h5py
   - ipympl
+  - tqdm
   - pip:
     - build
