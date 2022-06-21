@@ -32,6 +32,9 @@ dependencies:
   - plotly
   - nbmake
   - h5py
+  - ipympl
+  - tqdm
+  - ffmpeg
   - pip:
     - build
     - tensorboard
