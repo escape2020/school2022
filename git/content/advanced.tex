@@ -4,11 +4,30 @@
 \begin{frame}[c, fragile]{Partial Adding}
   \begin{itemize}
     \item Commits should be small, logically contained units
-    \item Sometimes, we implement multiple things in one go 
+    \item Sometimes, we implement multiple things in one go
     \item Go through all changes interactively, select what we want to add with
       \begin{code}{bash}
         $ git add -p
       \end{code}
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}[c, fragile]{Using git bisect for finding commits}
+  \begin{itemize}
+    \item To find the specific commit a bug was introduced or something changed
+    \item Uses a binary search by marking commits as good/bad or old/new
+    \item Can be done automatically by writing a small program that returns 1 for bad, 0 for good and 125 for \enquote{not sure}
+    \item Example using astropy, investigating \href{https://github.com/astropy/astropy/issues/12196}{astropy/astropy\#12196}
+    \begin{code}{text}
+      # start bisecting
+      git bisect start
+      # first checkout and
+      git bisect bad v4.3
+      git bisect good v4.2
+      # do tests and either mark commit as good or bad
+      git bisect [good|bad]
+    \end{code}
   \end{itemize}
 \end{frame}
 
@@ -76,7 +95,7 @@
 
   Can be made the default with \mintinline{bash}+git config --global pull.rebase true+
 
-  Changes how conflicts are resolved: Instead of creating a single merge commit that 
+  Changes how conflicts are resolved: Instead of creating a single merge commit that
   contains the fixes to make the two parents compatible, each commit that is rebased is adapted
   so the conflicts never existed.
 \end{frame}
@@ -160,7 +179,7 @@
 
 \begin{frame}[c, fragile]{Interactive Rebase}
   \begin{itemize}
-    \item Very powerful tool to change commits 
+    \item Very powerful tool to change commits
     \item Joining / dropping / reordering / changing commits
   \end{itemize}
   \begin{code}{bash}
@@ -172,7 +191,7 @@
   \begin{itemize}
     \item Git discourages mono-repositories with many projects or
       just adding other projects to a repository
-    \item Useful for 
+    \item Useful for
       \begin{itemize}
         \item external source dependencies (e.\,g.\ Google Test for C++ projects)
         \item meta-repositories joining multiple repositores at specific versions

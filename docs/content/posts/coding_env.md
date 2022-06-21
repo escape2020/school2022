@@ -4,14 +4,14 @@ date: 2022-06-20
 lastmod: 2022-06-20
 author: Enrique Garcia
 authorlink: https://github.com/garciagenrique
-cover: /school2022/docs/static/img/env_python.png
+cover: /school2022/img/env_python.png
 images:
-  - /school2021/docs/static/img/env_python.png
+  - /school2022/img/env_python.png
 categories:
   - Coding environment
   - Conda
 tags:
-  - README
+  - day 1
 ---
 
 ## Summary
