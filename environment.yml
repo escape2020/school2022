@@ -27,7 +27,6 @@ dependencies:
   - pytorch
   - torchvision
   - torchaudio
-  - cudatoolkit=11.3
   - plotly
   - pip:
     - build
