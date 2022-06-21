@@ -13,7 +13,6 @@ categories:
   - Jupyter
   - Notebook
 tags:
-  - README
   - day 1
 ---
 

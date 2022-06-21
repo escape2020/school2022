@@ -9,7 +9,7 @@ images:
 categories:
   - Other
 tags:
-  - README
+  - day 0
 ---
 
 DEMO CLASS - TO BE REMOVED
