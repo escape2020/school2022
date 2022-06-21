@@ -6,10 +6,15 @@ conda activate eschool2022
 ```
 Then, install PyTorch (pytorch.org), jupyter and other dependencies
 ```
-conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+conda install pytorch torchvision torchaudio -c pytorch
 conda install plotly
 pip install tensorboard
 pip install pytorch-lightning
+```
+
+If you have a GPU available on your machine, you may run also:
+``` 
+conda install cudatoolkit=11.3 -c pytorch
 ```
 
 Then, run all cells of T0_hands_on_preparation.ipynb
