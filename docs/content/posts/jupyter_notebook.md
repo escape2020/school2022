@@ -14,7 +14,7 @@ categories:
   - Notebook
 tags:
   - README
-  - day 2
+  - day 1
 ---
 
 ## Summary
