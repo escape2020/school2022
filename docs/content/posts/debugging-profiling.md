@@ -35,9 +35,9 @@ The first step to writing code is to first get it to work both syntactically and
 
 ## References and external
 
-- The Python Debugger: https://docs.python.org/3/library/pdb.html
-- The Python Profiler: https://docs.python.org/3/library/profile.html
-- `line_profiler`: https://github.com/rkern/line_profiler
-- `memory_profiler`: https://github.com/pythonprofilers/memory_profiler
+- [The Python Debugger](https://docs.python.org/3/library/pdb.html)
+- [The Python Profiler](https://docs.python.org/3/library/profile.html)
+- [line_profiler](https://github.com/rkern/line_profiler)
+- [memory_profiler](https://github.com/pythonprofilers/memory_profiler)
 
 ---
