@@ -11,7 +11,6 @@ categories:
   - Coding environment
   - Conda
 tags:
-  - README
   - day 1
 ---
 
