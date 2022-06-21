@@ -32,7 +32,7 @@ print(f"{len(speakers)} speakers")
 participants = df[df['Catégorie']!='SPEAKER Escape Summer School June 19th to 24th  2022']
 
 
-payes = pd.concat([participants[participants['Facture payée']=='Oui'], manual_list])
+payes = participants[participants['Facture payée']=='Oui']
 non_payes = participants[participants['Facture payée']=='Non']
 virements_attente = participants[(participants['Paiement']=='VIREMENT') & (participants['Facture payée']=='Non')]
 print(f"{len(participants)} participants et {len(payes)} payes\n\n")
