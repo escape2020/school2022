@@ -27,5 +27,8 @@ dependencies:
   - snakeviz
   - nbmake
   - h5py
+  - ipympl
+  - tqdm
+  - ffmpeg
   - pip:
     - build
