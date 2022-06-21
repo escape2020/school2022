@@ -2,6 +2,7 @@ name: eschool2022
 channels:
   - default
   - conda-forge
+  - pytorch
 dependencies:
   - astropy
   - ipython
@@ -25,6 +26,10 @@ dependencies:
   - line_profiler
   - memory_profiler
   - snakeviz
+  - pytorch
+  - torchvision
+  - torchaudio
+  - plotly
   - nbmake
   - h5py
   - ipympl
@@ -32,3 +37,5 @@ dependencies:
   - ffmpeg
   - pip:
     - build
+    - tensorboard
+    - pytorch-lightning
