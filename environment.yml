@@ -6,6 +6,7 @@ channels:
 dependencies:
   - astropy
   - ipython
+  - ipywidgets~=7.7.0
   - jupyterlab
   - matplotlib
   - seaborn
@@ -17,6 +18,7 @@ dependencies:
   - pytest
   - pytest-cov
   - python=3.10
+  - rise~=5.7.1
   - scikit-learn
   - scipy
   - twine
@@ -28,6 +30,8 @@ dependencies:
   - torchvision
   - torchaudio
   - plotly
+  - nbmake
+  - h5py
   - pip:
     - build
     - tensorboard
