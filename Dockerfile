@@ -18,3 +18,5 @@ RUN conda clean --all
 WORKDIR $HOME
 USER $NB_USER
 
+RUN rm -rf work
+
