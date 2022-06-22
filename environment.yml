@@ -2,6 +2,7 @@ name: eschool2022
 channels:
   - default
   - conda-forge
+  - cta-observatory
 dependencies:
   - astropy
   - ipython
@@ -27,5 +28,7 @@ dependencies:
   - snakeviz
   - nbmake
   - h5py
+  - ipympl
+  - ctapipe
   - pip:
     - build
