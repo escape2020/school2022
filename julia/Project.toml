@@ -1,0 +1,7 @@
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
