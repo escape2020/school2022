@@ -44,7 +44,7 @@ jobs:
       shell: bash -leo pipefail {0}
       run: |
         python -m ipykernel install --user --name eschool2022
-        pytest --nbmake --nbmake-kernel=eschool2022 --ignore=julia **/*ipynb
+        pytest --nbmake --nbmake-kernel=eschool2022 --ignore=julia --ignore=testing
 
 
   build-windows:
