@@ -2,6 +2,7 @@ FROM jupyter/base-notebook:lab-3.4.3
 
 USER root
 
+
 COPY . /home/jovyan/school2022
 WORKDIR /home/jovyan/school2022
 
