@@ -11,7 +11,7 @@ categories:
   - Julia
   - Basics
 tags:
-  - day 1
+  - day 3
 ---
 
 ## Summary
