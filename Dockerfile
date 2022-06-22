@@ -1,6 +1,7 @@
-FROM jupyter/datascience-notebook:python-3.10.4
+FROM jupyter/base-notebook:lab-3.4.3
 
 USER root
+
 
 COPY . /home/jovyan/school2022
 WORKDIR /home/jovyan/school2022
@@ -18,3 +19,4 @@ WORKDIR $HOME
 USER $NB_USER
 
 RUN rm -rf work
+
