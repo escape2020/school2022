@@ -13,12 +13,18 @@ import numpy as np
 import pandas as pd
 from matplotlib.colors import ListedColormap, to_hex
 
+from ctapipe.instrument import SubarrayDescription
+
 
 rng = np.random.default_rng(0)
 
 
 colors = ['xkcd:sky', 'xkcd:grass']
 cmap = ListedColormap(colors)
+
+
+gamma_filename = get_dataset_path('gamma_diffuse_dl2_train_small.dl2.h5')
+proton_filename = get_dataset_path('proton_dl2_train_small.dl2.h5')
 
 
 def set_plot_style():
@@ -48,15 +54,16 @@ def read_events(path):
 
     # convert astropy.table.Table to pd.DataFrame
     table = table.to_pandas()
-    forbidden_columns = 'true_|obs_id|event_id'
+    forbidden_columns = 'obs_id|event_id'
     table = table.filter(regex=f'^(?!{forbidden_columns}).*$')
     return table
 
 
 def get_gammas():
-    gamma_path = get_dataset_path('gamma_diffuse_dl2_train_small.dl2.h5')
+    gamma_path = gamma_filename
     return read_events(gamma_path)
     
 def get_protons():
-    proton_path = get_dataset_path('proton_dl2_train_small.dl2.h5')
+    proton_path = proton_filename
     return read_events(proton_path)
+
