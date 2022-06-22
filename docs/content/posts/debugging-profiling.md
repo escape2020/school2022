@@ -22,14 +22,11 @@ The first step to writing code is to first get it to work both syntactically and
 
 <CENTER>
 
-<!--
-<object data="https://indico.in2p3.fr/event/26913/contributions/108203/attachments/71494/101780/git.pdf" type="application/pdf" width="100%" height="550px">
-    <embed src="https://indico.in2p3.fr/event/26913/contributions/108203/attachments/71494/101780/git.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://indico.in2p3.fr/event/26913/contributions/108203/attachments/71494/101780/git.pdf">Download PDF</a>.</p>
+<object data="https://indico.in2p3.fr/event/26913/contributions/109504/attachments/71702/102155/ESCAPE2022%20-%20kosack%20-%20Debugging%20and%20Profiling-v1.pdf" type="application/pdf" width="100%" height="550px">
+    <embed src="https://indico.in2p3.fr/event/26913/contributions/109504/attachments/71702/102155/ESCAPE2022%20-%20kosack%20-%20Debugging%20and%20Profiling-v1.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://indico.in2p3.fr/event/26913/contributions/109504/attachments/71702/102155/ESCAPE2022%20-%20kosack%20-%20Debugging%20and%20Profiling-v1.pdf">Download PDF</a>.</p>
     </embed>
 </object>
-
--->
 
 </CENTER>
 
