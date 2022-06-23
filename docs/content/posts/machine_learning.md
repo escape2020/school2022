@@ -1,5 +1,5 @@
 ---
-title: Demo Class
+title: Machine learning
 date: 2022-06-23
 lastmod: 2022-06-23
 author: Martino Sorbaro and Michaël Dell'aiera
