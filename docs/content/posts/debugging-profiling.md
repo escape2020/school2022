@@ -3,7 +3,7 @@ title: Debugging and Profiling Scientific Software
 date: 2022-06-23
 lastmod: 2022-06-21
 author: Karl Kosack
-cover: /school2022/img/profile.png
+cover: /school2022/img/debugging-profiling.png
 images:
   - /school2022/img/debugging-profiling.png
 categories:
