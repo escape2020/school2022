@@ -1,4 +1,4 @@
-def test_fiboncacci():
+def test_fibonacci():
     from fibonacci import fibonacci
 
     assert fibonacci(4) == 3
