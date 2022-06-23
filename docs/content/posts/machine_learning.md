@@ -3,9 +3,9 @@ title: Machine learning
 date: 2022-06-23
 lastmod: 2022-06-23
 author: Martino Sorbaro and Michaël Dell'aiera
-cover: /school2022/img/DL_Logo_escape_2022.png
+cover: /school2022/img/ml.png
 images:
-  - /school2022/img/DL_Logo_escape_2022.png
+  - /school2022/img/ml.png
 categories:
   - Machine learning
 tags:
