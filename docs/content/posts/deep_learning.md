@@ -3,13 +3,12 @@ title: Demo Class
 date: 2019-06-17
 lastmod: 2019-06-17
 author: Mikaël Jacquemont
-cover: /school2021/img/DL_Logo_escape_2022.png
+cover: /school2022/img/DL_Logo_escape_2022.png
 images:
-  - /school2021/img/DL_Logo_escape_2022.png
+  - /school2022/img/DL_Logo_escape_2022.png
 categories:
-  - Deep learning
+  - Machine learning
 tags:
-  - README
   - Day 5
 ---
 
