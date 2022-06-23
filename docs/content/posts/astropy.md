@@ -11,7 +11,6 @@ categories:
   - Community specific analysis
 tags:
   - Day 3
-  - Python
 ---
 
 Astropy
