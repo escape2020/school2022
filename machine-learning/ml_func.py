@@ -1,33 +1,14 @@
-import pandas as pd
-from ctapipe.io import TableLoader
-from ctapipe.utils import get_dataset_path
-
-
 import matplotlib.pyplot as plt
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import confusion_matrix
-from sklearn import tree
-import collections
-import seaborn as sns
-import numpy as np
-import pandas as pd
-from matplotlib.colors import ListedColormap, to_hex
 from pathlib import Path
 import requests
 import sys
 
-from ctapipe.instrument import SubarrayDescription
 
 
-rng = np.random.default_rng(0)
-
-
-colors = ['xkcd:sky', 'xkcd:grass']
-cmap = ListedColormap(colors)
-
-
-gamma_filename = get_dataset_path('gamma_diffuse_dl2_train_small.dl2.h5')
-proton_filename = get_dataset_path('proton_dl2_train_small.dl2.h5')
+def save_prediction(test_df, yourname):
+    test_df[['obs_id', 'event_id', 'reco_energy', 'reco_type']].to_hdf(f'pred_{yourname}.h5',
+                                                                       key='pred',
+                                                                       complevel=3)
 
 # a function to download a file from a url
 def download_file(url, filename, force=False):
@@ -59,33 +40,4 @@ def set_plot_style():
     plt.rcParams["axes.spines.top"] = False
     plt.rcParams["axes.spines.right"] = False
 
-
-def read_events(path):
-
-    loader = TableLoader(
-        path,
-        load_dl2_geometry=True,
-        load_instrument=True,
-        load_simulated=True,
-    )
-
-    table = loader.read_telescope_events()
-
-    # these two columns are arrays in each row, which is not supported by pandas
-    table.remove_columns(['tels_with_trigger', 'HillasReconstructor_tel_ids'])
-
-    # convert astropy.table.Table to pd.DataFrame
-    table = table.to_pandas()
-    forbidden_columns = 'obs_id|event_id'
-    table = table.filter(regex=f'^(?!{forbidden_columns}).*$')
-    return table
-
-
-def get_gammas():
-    gamma_path = gamma_filename
-    return read_events(gamma_path)
-    
-def get_protons():
-    proton_path = proton_filename
-    return read_events(proton_path)
 
