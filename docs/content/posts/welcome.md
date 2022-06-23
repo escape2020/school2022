@@ -10,8 +10,7 @@ images:
 categories:
   - Welcome
 tags:
-  - README
-  - Day 1
+  - day 1
 weight: 1
 ---
 

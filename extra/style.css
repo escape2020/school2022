@@ -1,0 +1,47 @@
+body {
+  font-size: 12pt;
+
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+  color: black;
+
+  line-height: 14pt;
+
+  padding-left: 5pt;
+
+  padding-right: 5pt;
+
+  padding-top: 5pt;
+
+}
+
+
+h1 {
+
+  font: 18pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+  text-align: center;
+
+  font-weight: bold;
+
+  line-height: 40pt;
+
+}
+
+
+p.subheader {
+
+  font-weight: bold;
+
+  color: #593d87;
+
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+
+}
