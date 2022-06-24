@@ -26,9 +26,6 @@ dependencies:
   - line_profiler
   - memory_profiler
   - snakeviz
-  - pytorch
-  - torchvision
-  - torchaudio
   - plotly
   - nbmake
   - h5py
@@ -40,3 +37,6 @@ dependencies:
     - build
     - tensorboard
     - pytorch-lightning
+    - torch
+    - torchvision
+    - torchaudio
