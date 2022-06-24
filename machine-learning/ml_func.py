@@ -2,7 +2,8 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import requests
 import sys
-
+from sklearn.metrics import mean_squared_log_error, accuracy_score, mean_squared_error
+import pandas as pd
 
 
 def save_prediction(test_df, yourname):
@@ -40,3 +41,25 @@ def set_plot_style():
     plt.rcParams["axes.spines.right"] = False
 
 
+
+    
+def scoring(test_file):
+    test_labels = pd.read_hdf('escape_school_cta_data_test.h5')
+    prediction = pd.read_hdf(test_file)
+    df = pd.merge(test_labels, prediction, on=['obs_id', 'event_id'])
+    gammas = df[df['true_shower_primary_id']==0]
+    mse = mean_squared_log_error(gammas['true_energy'], gammas['reco_energy'])
+    acc = accuracy_score(df['true_shower_primary_id'], df['reco_type'])
+    return mse, acc
+
+def ranking(directory):
+    scores = pd.DataFrame(columns=['name', 'mse', 'acc'])
+    for file in Path(directory).glob('*.h5'):
+        participant_name = file.stem.replace('pred_', '')
+        sc = scoring(file)
+        scores = scores.append({'name': participant_name, 'mse': sc[0], 'acc': sc[1]},
+                      ignore_index=True
+                     )
+    scores = scores.sort_values(['mse', 'acc'])
+    return scores
+    
