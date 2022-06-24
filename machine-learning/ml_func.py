@@ -49,7 +49,6 @@ def scoring(test_file):
     df = pd.merge(test_labels, prediction, on=['obs_id', 'event_id'])
     gammas = df[df['true_shower_primary_id']==0]
     mse = mean_squared_log_error(gammas['true_energy'], gammas['reco_energy'])
-    # mse = mean_squared_error(df['true_energy'], df['reco_energy'])
     acc = accuracy_score(df['true_shower_primary_id'], df['reco_type'])
     return mse, acc
 
