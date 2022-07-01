@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from pathlib import Path
 import requests
-import sys
+from tqdm.auto import tqdm
 
 
 
@@ -21,14 +21,11 @@ def download_file(url, filename, force=False):
         if total_length is None: # no content length header - just download the file
             f.write(response.content)
         else:
-            dl = 0  # downloaded size
             total_length = int(total_length)
-            for data in response.iter_content(chunk_size=1024):
-                dl += len(data)
+            bar = tqdm(total=total_length, unit_scale=True, unit='B')
+            for data in response.iter_content(chunk_size=50*1024):
+                bar.update(len(data))
                 f.write(data)
-                done = int(50 * dl / total_length)
-                sys.stdout.write("\r[%s%s]" % ('=' * done, ' ' * (50-done)))
-                sys.stdout.flush()
 
 def set_plot_style():
     plt.rcParams["figure.figsize"] = (9.23, 9.23 / 3 * 2)
